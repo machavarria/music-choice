@@ -1,0 +1,148 @@
+/* Used chatgpt to help with the sytling for the project */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff6ec7;
+  text-shadow: 0 0 10px #ff6ec7;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 40px;
+}
+
+
+.song-list {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  padding: 0;
+}
+
+.song-list li {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.song-list li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+}
+
+
+.name {
+  font-weight: bold;
+  color: #ffd700;
+  margin-right: 10px;
+}
+
+.song {
+  font-style: italic;
+  flex: 1;
+  margin-left: 5px;
+  color: #87cefa;
+}
+
+
+.votes {
+  margin-right: 10px;
+  color: #00ffea;
+  font-weight: bold;
+}
+
+
+.fa-thumbs-up,
+.fa-thumbs-down,
+.fa-trash {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.fa-thumbs-up:hover {
+  color: #00ff00;
+}
+
+.fa-thumbs-down:hover {
+  color: #ff0000;
+}
+
+.fa-trash:hover {
+  color: #ff69b4;
+}
+
+
+form.song {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form.song input {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+form.song input:focus {
+  box-shadow: 0 0 10px #ff6ec7;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+form.song button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #ff6ec7;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form.song button:hover {
+  background: #ff3fcf;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .song-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .votes,
+  .fa-thumbs-up,
+  .fa-thumbs-down,
+  .fa-trash {
+    margin-top: 10px;
+  }
+}
