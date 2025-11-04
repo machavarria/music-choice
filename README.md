@@ -14,8 +14,9 @@ User can Login/Sign up to make an account to mark down what music artist they ar
 - Node.js + Express
 
 ### Lessons Learned:
-- How to manage a database using MongoDB
-- How to store data
+- How to create and manage a database collection with MongoDB
+- How to set up an Express server and define routes for different pages
+- How to handle form inputs and pass data from the frontend to the backend
 
 
 ## Installation
