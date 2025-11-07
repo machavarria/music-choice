@@ -8,7 +8,7 @@ const MongoClient = require('mongodb').MongoClient
 
 var db, collection;
 
-const url = "mongodb+srv://marcachavarria3_db_user:8uda2ZOAVSeCaa5p@cluster0.8fmgguf.mongodb.net/?appName=Cluster0";
+const url = "mongodb+srv://marcachavarria3_db_user:8uda2ZOAVSeCaa5p@cluster0.8fmgguf.mongodb.net/Cluster0?appName=Cluster0";
 const dbName = "Cluster0";
 
 
